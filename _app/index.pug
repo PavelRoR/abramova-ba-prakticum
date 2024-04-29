@@ -1,0 +1,64 @@
+-var path = '';
+-var head_url = 'https://abramova.newsystempsy.com/ba-prakticum/';
+-var head_title = '«Как стать востребованнымбизнес-расстановщиком»';
+-var head_description = '5-дневный практикум для начинающих и опытных специалистов помогающих профессий';
+-var styles = path+'css/styles.min.css';
+-var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var libs = path+'js/libs.min.js';
+-var scripts = path+'js/scripts.min.js';
+-var noref = true;
+-var io = true;
+
+mixin b(bwcl,cl,href,p, n)
+	.button-wrapper(class=bwcl)
+		if n
+			a.button(class=cl href=href onclick="awoOpenFormModal("+n+")")!=p
+		else
+			a.button(class=cl href=href)!=p
+mixin img(cl,src,alt)
+	img(class=cl src!=src alt=alt)
+mixin gt(cl,h3)
+	.general-title(class=cl)
+		h3!=h3
+mixin gts(cl,h3)
+	.general-title-simple(class=cl)!=h3
+mixin gtl(cl,h3,sp)
+	.general-title.general-title-left(class=cl)
+		h3
+			if sp
+				span!=sp
+			!=h3
+mixin gtr(cl,h3,sp)
+	.general-title.general-title-right(class=cl)
+		h3!=h3
+			if sp
+				span!=sp
+mixin gtc(cl,h3,sp)
+	.general-title.general-title-center(class=cl)
+		h3
+			if sp
+				span!=sp
+			=h3
+
+doctype html
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			.main-wrapper
+				include pug/main/1-main
+				include pug/main/2-about
+			include pug/main/3-plan
+			include pug/main/4-for
+			include pug/main/5-author
+			include pug/main/6-get
+			include pug/main/7-revs
+		include pug/base/2-footer
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
