@@ -451,11 +451,11 @@ footer {
   text-decoration: none;
   color: #fff;
   width: auto;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  padding: 20px 115px;
-  border-radius: 30px;
-  background-color: #fe7d3b;
+  padding: 16px 100px;
+  border-radius: 35px;
+  background-color: #a41134;
 }
 .button-wrapper {
   text-align: center;
@@ -554,6 +554,9 @@ footer {
     font-size: 20px;
   }
 }
+.general-title-white {
+  color: #fff;
+}
 .general-title-left span {
   top: 20px;
   left: -40px;
@@ -602,6 +605,38 @@ footer {
   .general-title-simple {
     font-size: 24px;
     margin-bottom: 40px;
+  }
+}
+.general-title-duo span:first-of-type {
+  top: 20px;
+  left: -40px;
+  text-align: left;
+}
+@media screen and (max-width: 991px) {
+  .general-title-duo span:first-of-type {
+    left: -30px;
+    top: 5px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .general-title-duo span:first-of-type {
+    left: -10px;
+  }
+}
+.general-title-duo span:last-of-type {
+  bottom: 10px;
+  right: -40px;
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  .general-title-duo span:last-of-type {
+    right: -30px;
+    bottom: 5px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .general-title-duo span:last-of-type {
+    right: -10px;
   }
 }
 .general-img {
@@ -660,7 +695,7 @@ header {
 }
 .header-logo {
   float: left;
-  width: 118px;
+  width: 114px;
   height: auto;
 }
 @media screen and (max-width: 991px) {
@@ -705,6 +740,142 @@ header {
 .fixed {
   position: fixed;
 }
+#revs {
+  padding: 90px 0;
+}
+@media screen and (max-width: 991px) {
+  #revs {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 386px) {
+  #revs {
+    padding: 40px 0;
+  }
+}
+.revs-slider-text {
+  width: 88%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .revs-slider-text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .revs-slider-text {
+    padding: 50px 0;
+  }
+}
+.slick-list {
+  border-radius: 15px;
+}
+.text-rev-wrap {
+  border-radius: 23px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 488px;
+  height: 444px;
+  background-color: #d9d9d9;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .text-rev-wrap {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .text-rev-wrap {
+    width: auto;
+    height: 322px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 386px) {
+  .text-rev-wrap {
+    height: 280px;
+  }
+}
+.text-rev-img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.slick-next,
+.slick-prev {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.slick-next:before,
+.slick-prev:before {
+  content: none;
+}
+.slick-next {
+  background-image: url("../img/icons/next.svg");
+  right: -65px;
+}
+@media screen and (max-width: 991px) {
+  .slick-next {
+    right: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .slick-next {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+.slick-next:focus,
+.slick-next:hover {
+  background-image: url("../img/icons/next.svg");
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.slick-prev {
+  background-image: url("../img/icons/prev.svg");
+  left: -65px;
+}
+@media screen and (max-width: 991px) {
+  .slick-prev {
+    left: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  .slick-prev {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+.slick-prev:focus,
+.slick-prev:hover {
+  background-image: url("../img/icons/prev.svg");
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 footer {
   background-color: #2c3e54;
   padding: 60px 0 40px;
@@ -734,8 +905,8 @@ footer a:hover {
 }
 .footer-main {
   padding: 23px 0 32px;
-  border-top: 1px solid #fe7d3b;
-  border-bottom: 1px solid #fe7d3b;
+  border-top: 1px solid #e7e5e5;
+  border-bottom: 1px solid #e7e5e5;
 }
 footer p {
   margin-bottom: 15px;

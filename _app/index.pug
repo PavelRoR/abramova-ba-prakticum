@@ -35,6 +35,14 @@ mixin gtr(cl,h3,sp)
 		h3!=h3
 			if sp
 				span!=sp
+mixin gtd(cl,h3,sp1,sp2)
+	.general-title.general-title-left(class=cl)
+		h3
+			if sp1
+				span!=sp1
+			!=h3
+			if sp2
+				span!=sp2
 mixin gtc(cl,h3,sp)
 	.general-title.general-title-center(class=cl)
 		h3
