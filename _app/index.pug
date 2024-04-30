@@ -10,6 +10,7 @@
 -var scripts = path+'js/scripts.min.js';
 -var noref = true;
 -var io = true;
+-href = 'javascript:void(0);'
 
 mixin b(bwcl,cl,href,p, n)
 	.button-wrapper(class=bwcl)
@@ -36,7 +37,7 @@ mixin gtr(cl,h3,sp)
 			if sp
 				span!=sp
 mixin gtd(cl,h3,sp1,sp2)
-	.general-title.general-title-left(class=cl)
+	.general-title.general-title-duo(class=cl)
 		h3
 			if sp1
 				span!=sp1
