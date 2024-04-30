@@ -791,8 +791,21 @@ header {
   position: fixed;
 }
 .main-wrapper {
-  background: url("../img/backs/main.svg") no-repeat top center;
-  background-size: 100% 1450px;
+  position: relative;
+}
+.main-wrapper-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  z-index: -1;
+}
+@media screen and (min-width: 1920px) {
+  .main-wrapper-img {
+    width: 100%;
+  }
 }
 .main-container {
   position: relative;
@@ -804,8 +817,15 @@ header {
 .main-img {
   position: absolute;
   top: 30px;
-  right: 100px;
+  right: 70px;
   z-index: 0;
+}
+@media screen and (max-width: 1199px) {
+  .main-img {
+    right: 0;
+    width: 100%;
+    max-width: 400px;
+  }
 }
 .main-info {
   position: relative;
@@ -817,6 +837,11 @@ header {
   margin-bottom: 20px;
   line-height: 1;
   text-transform: uppercase;
+}
+@media screen and (max-width: 1199px) {
+  .main-title {
+    font-size: 70px;
+  }
 }
 .main-title small {
   font-family: 'Noah', sans-serif;
@@ -862,6 +887,11 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+@media screen and (max-width: 1199px) {
+  .main-cert {
+    margin: 45px 0;
+  }
 }
 .main-cert-img {
   margin-right: 20px;
@@ -925,6 +955,11 @@ header {
   max-width: 535px;
   margin-right: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .about-img {
+    width: 50%;
+  }
+}
 .about-item {
   margin-bottom: 45px;
 }
@@ -943,6 +978,11 @@ header {
 .days {
   margin-bottom: 70px;
 }
+@media screen and (max-width: 1199px) {
+  .day {
+    padding: 25px;
+  }
+}
 .day-title {
   display: table-cell;
   width: 385px;
@@ -951,6 +991,11 @@ header {
   position: relative;
   height: 100%;
   vertical-align: middle;
+}
+@media screen and (max-width: 1199px) {
+  .day-title {
+    width: 35%;
+  }
 }
 .day-title:before {
   content: '';

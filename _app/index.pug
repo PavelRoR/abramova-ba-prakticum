@@ -14,10 +14,10 @@
 
 mixin b(bwcl,cl,href,p, n)
 	.button-wrapper(class=bwcl)
-		if n
-			a.button(class=cl href=href onclick="awoOpenFormModal("+n+")")!=p
-		else
-			a.button(class=cl href=href)!=p
+		a.button(class=cl href=href onclick="awoOpenFormModal(41)")!=p
+		//- if n
+		//- else
+		//- 	a.button(class=cl href=href)!=p
 mixin img(cl,src,alt)
 	img(class=cl src!=src alt=alt)
 mixin gt(cl,h3)
@@ -60,6 +60,7 @@ html(lang="ru")
 		include pug/scripts/body_top_scripts
 		.wrapper
 			.main-wrapper
+				+img('main-wrapper-img', 'img/backs/main.svg', 'Фон')
 				include pug/main/1-main
 				include pug/main/2-about
 			include pug/main/3-plan
@@ -69,5 +70,6 @@ html(lang="ru")
 			include pug/main/7-revs
 		include pug/base/2-footer
 		include pug/base/3-scripts
-		//- include pug/scripts/chat
+		<script src="https://shop.iomp.ru/?r=fp/admin/getformscript&id=41&vc=2bc716cd9b4b8c852983963eade9305d&popup=1&hideButton=1"></script>
+		include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts
