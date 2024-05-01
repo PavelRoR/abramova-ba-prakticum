@@ -9,12 +9,14 @@ section#main
 						| бизнес-расстановщиком
 					p.main-pre.mob-none 5-дневный практикум
 					h2.main-subtitle для&nbsp;начинающих и опытных специалистов помогающих профессий
-					+img('main-img d-none', 'img/images/main-2.png', 'Жанна Абрамова')
+					.mob-img-wrapper.d-none
+						+img('main-img-mob', 'img/images/main-2.png', 'Жанна Абрамова')
+						+img('main-img-mob main-img-mob-2', 'img/images/main-3.png', 'Жанна Абрамова')
 					p.main-pre.d-none 5-дневный практикум
 				.main-cert
 					+img('main-cert-img','img/icons/main.svg', 'Каждый участник получает сертификат Института современной психологии')
 					p.main-cert-text Каждый участник получает сертификат Института современной психологии
-				+b('button-wrapper-left', '', href, 'Принять участие')
+				+b('button-wrapper-left button-wrapper-main', '', href, 'Принять участие')
 				.main-date
 					p.main-date-text 27-31&nbsp;мая
 					p.main-date-text 5&nbsp;эфиров
