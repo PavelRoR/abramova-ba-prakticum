@@ -1,7 +1,8 @@
 section#about
 	.container
 		+gtl('', 'бизнес-расстановщик', 'кто такой')
-	+img('d-none about-img', 'img/images/about.png', 'Кто такой бизнес-расстановщик')
+	.d-none.mob-img-wrapper.d-none
+		+img('about-img-mob', 'img/images/about.png', 'Кто такой бизнес-расстановщик')
 	.container
 		.about-info
 			+img('mob-none about-img', 'img/images/about.png', 'Кто такой бизнес-расстановщик')

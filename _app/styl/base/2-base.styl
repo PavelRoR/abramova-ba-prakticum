@@ -82,10 +82,11 @@ footer
 	padding 16px 100px
 	border-radius: 35px
 	background-color: #A41134
-	@media screen and (max-width 480px)
+	@media screen and (max-width 414px)
 		padding 20px 40px
 		width 100%
 		max-width 320px
+		font-size: 16px
 	&:focus
 		text-decoration none
 		color #fff
@@ -127,7 +128,8 @@ footer
 		font-size: 28px
 		margin-bottom: 40px
 	@media screen and (max-width 386px)
-		font-size: 26px
+		font-size: 24px
+		margin-bottom: 25px
 	h3
 		display inline-block
 	span
@@ -138,32 +140,36 @@ footer
 		color #767F8D
 		@media screen and (max-width 991px)
 			font-size: 24px
-		@media screen and (max-width 386px)
-			font-size: 20px
+		@media screen and (max-width 414px)
+			font-size: 18px
 	&-white
 		color #fff
 		span
 			color #fff
 	&-left
+		@media screen and (max-width 991px)
+			text-align center
 		span
 			top 20px
 			left -40px
 			text-align: left
 			@media screen and (max-width 991px)
-				left: -30px
+				left: 0
+				right 0
 				top 5px
-			@media screen and (max-width 610px)
-				left -10px
+				text-align center
 	&-right
+		@media screen and (max-width 991px)
+			text-align center
 		span
 			bottom: 10px
 			right -40px
 			text-align: right
 			@media screen and (max-width 991px)
-				right: -30px
+				right: 0
+				// left 0
 				bottom: 5px
-			@media screen and (max-width 610px)
-				right -10px
+				text-align center
 	&-plan
 		color #fff
 		text-shadow: 2px 2px 8px rgba(#2C3E54, .8)
@@ -177,6 +183,9 @@ footer
 		@media screen and (max-width 991px)
 			font-size: 24px
 			margin-bottom: 40px
+		@media screen and (max-width 414px)
+			font-size: 18px
+			margin-bottom: 25px
 	&-duo
 		span
 			&:first-of-type
@@ -203,15 +212,21 @@ footer
 	text-transform uppercase
 	margin-bottom: 15px
 	line-height: 1.2
+	@media screen and (max-width 991px)
+		font-size: 24px
+	@media screen and (max-width 414px)
+		font-size: 18px
 .general-text
 	font-size: 24px
 	margin-bottom: 20px
 	line-height: 1.2
+	@media screen and (max-width 414px)
+		font-size: 16px
 .general-img
 	position absolute
 .mob-none
 	@media screen and (max-width 991px)
-		display none
+		display none !important
 .d-none
 	display none !important
 	@media screen and (max-width 991px)
@@ -224,8 +239,8 @@ footer
 // 		text-align right
 .general-list
 	margin-left: 30px
-	@media screen and (max-width 386px)
-		margin-left: 5px
+	@media screen and (max-width 991px)
+		margin-left: 10px
 	li
 		line-height: 1
 		position relative
@@ -233,6 +248,8 @@ footer
 		padding-left: 15px
 		font-size: 24px
 		list-style none
+		@media screen and (max-width 414px)
+			font-size: 16px
 		&:before
 			content: ''
 			display block
@@ -243,6 +260,8 @@ footer
 			background-color: #000
 			width 4px
 			height: 4px
+			@media screen and (max-width 414px)
+				top 7px
 		&:last-child
 			margin-bottom: 0
 	&-2
@@ -253,6 +272,10 @@ footer
 			padding-left: 60px
 			position relative
 			line-height: 1.1
+			@media screen and (max-width 414px)
+				padding-left: 35px
+				margin-bottom: 15px
+				font-size: 16px
 			&:before
 				content: ''
 				display block
@@ -263,3 +286,14 @@ footer
 				height: 42px
 				background: url(../img/icons/check.svg) no-repeat center left
 				background-size: cover
+				@media screen and (max-width 414px)
+					top -5px
+					width 24px
+					height: 24px
+.mob-img-wrapper
+	@media screen and (max-width 991px)
+		display flex !important
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		flex-wrap: nowrap

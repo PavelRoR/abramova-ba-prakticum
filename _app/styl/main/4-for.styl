@@ -3,8 +3,14 @@
 	background-size: cover
 	padding 100px 0 130px
 	color #fff
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 414px)
+		padding 40px 0
 .for-list
 	margin-bottom: 65px
+	@media screen and (max-width 991px)
+		margin-bottom: 40px
 	li
 		list-style none
 		position relative
@@ -15,6 +21,11 @@
 		font-weight: bold
 		background: url(../img/icons/check-white.svg) no-repeat left top
 		background-size: 50px 50px
+		@media screen and (max-width 414px)
+			background-size: 40px 40px
+			padding-left: 60px
+			font-size: 16px
+			margin-bottom: 15px
 		&:last-child
 			margin-bottom: 0
 		// &:before

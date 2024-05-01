@@ -1,5 +1,9 @@
 #author
 	padding 120px 0
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 414px)
+		padding 40px 0
 .author-pre
 	text-align center
 	font-size: 28px
@@ -9,16 +13,25 @@
 	margin 0 auto
 	width 100%
 	max-width 1015px
+	@media screen and (max-width 414px)
+		font-size: 18px
+		font-weight: normal
+		color #4F5F76
+		line-height: 1.2
 	&-img
 		display block
 		margin 35px auto 120px
+		@media screen and (max-width 414px)
+			margin 20px auto 80px
+			width 28px
+			height: 12px
 .general-title-author
 	position relative
 	margin-bottom: -40px
 	z-index 30
 	@media screen and (max-width 991px)
 		margin-bottom: 20px
-		padding-bottom: 28px
+		padding-bottom: 0
 		text-align: center
 		h3
 			text-align center
@@ -28,7 +41,7 @@
 		// 	text-align: left
 	span
 		@media screen and (max-width 991px)
-			text-align: left
+			text-align: center
 			left: -30px
 			top 5px
 		@media screen and (max-width 610px)
@@ -46,15 +59,30 @@
 		height: 3px
 		background-color: #A41134
 		@media screen and (max-width 991px)
-			bottom: 0
+			content: none
 .author
 	&-img
 		display block
 		width 100%
 		max-width 466px
 		position relative
+		margin 0 auto
+		@media screen and (max-width 991px)
+			&-mob
+				width 100%
+				max-width 466px
+				margin 0 auto
+				display block !important
+				@media screen and (max-width 414px)
+					height: 493px
+					object-fit: cover
+					object-position: center
 	&-info-best
 		margin: 59px 0 40px
+		// display inline-block
+		@media screen and (max-width 991px)
+			margin 40px auto
+			display block
 		h4
 			margin-bottom: 30px
 			font-size: 28px
@@ -63,7 +91,20 @@
 			color #fff
 			padding 30px 20px
 			background-color: #2C3E54
-			display inline-block
 			text-align center
+			@media screen and (max-width 991px)
+				margin-bottom: 0
+			@media screen and (max-width 414px)
+				font-size: 17px
+				padding 20px 15px
+			span
+				display block
+				@media screen and (max-width 414px)
+					font-size: 18px
 .general-subtitle-author
 	margin: 100px 0 59px
+	@media screen and (max-width 991px)
+		margin 20px 0
+		padding-top: 20px
+		text-align center
+		border-top: 3px solid #A41134

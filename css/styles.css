@@ -465,11 +465,12 @@ footer {
 .button-wrapper-left {
   text-align: left;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 414px) {
   .button {
     padding: 20px 40px;
     width: 100%;
     max-width: 320px;
+    font-size: 16px;
   }
 }
 .button:focus {
@@ -533,7 +534,8 @@ footer {
 }
 @media screen and (max-width: 386px) {
   .general-title {
-    font-size: 26px;
+    font-size: 24px;
+    margin-bottom: 25px;
   }
 }
 .general-title h3 {
@@ -551,9 +553,9 @@ footer {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 414px) {
   .general-title span {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .general-title-white {
@@ -562,6 +564,11 @@ footer {
 .general-title-white span {
   color: #fff;
 }
+@media screen and (max-width: 991px) {
+  .general-title-left {
+    text-align: center;
+  }
+}
 .general-title-left span {
   top: 20px;
   left: -40px;
@@ -569,13 +576,15 @@ footer {
 }
 @media screen and (max-width: 991px) {
   .general-title-left span {
-    left: -30px;
+    left: 0;
+    right: 0;
     top: 5px;
+    text-align: center;
   }
 }
-@media screen and (max-width: 610px) {
-  .general-title-left span {
-    left: -10px;
+@media screen and (max-width: 991px) {
+  .general-title-right {
+    text-align: center;
   }
 }
 .general-title-right span {
@@ -585,13 +594,9 @@ footer {
 }
 @media screen and (max-width: 991px) {
   .general-title-right span {
-    right: -30px;
+    right: 0;
     bottom: 5px;
-  }
-}
-@media screen and (max-width: 610px) {
-  .general-title-right span {
-    right: -10px;
+    text-align: center;
   }
 }
 .general-title-plan {
@@ -610,6 +615,12 @@ footer {
   .general-title-simple {
     font-size: 24px;
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .general-title-simple {
+    font-size: 18px;
+    margin-bottom: 25px;
   }
 }
 .general-title-duo span:first-of-type {
@@ -651,17 +662,32 @@ footer {
   margin-bottom: 15px;
   line-height: 1.2;
 }
+@media screen and (max-width: 991px) {
+  .general-subtitle {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .general-subtitle {
+    font-size: 18px;
+  }
+}
 .general-text {
   font-size: 24px;
   margin-bottom: 20px;
   line-height: 1.2;
+}
+@media screen and (max-width: 414px) {
+  .general-text {
+    font-size: 16px;
+  }
 }
 .general-img {
   position: absolute;
 }
 @media screen and (max-width: 991px) {
   .mob-none {
-    display: none;
+    display: none !important;
   }
 }
 .d-none {
@@ -675,9 +701,9 @@ footer {
 .general-list {
   margin-left: 30px;
 }
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 991px) {
   .general-list {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }
 .general-list li {
@@ -687,6 +713,11 @@ footer {
   padding-left: 15px;
   font-size: 24px;
   list-style: none;
+}
+@media screen and (max-width: 414px) {
+  .general-list li {
+    font-size: 16px;
+  }
 }
 .general-list li:before {
   content: '';
@@ -699,6 +730,11 @@ footer {
   width: 4px;
   height: 4px;
 }
+@media screen and (max-width: 414px) {
+  .general-list li:before {
+    top: 7px;
+  }
+}
 .general-list li:last-child {
   margin-bottom: 0;
 }
@@ -710,6 +746,13 @@ footer {
   position: relative;
   line-height: 1.1;
 }
+@media screen and (max-width: 414px) {
+  .general-list-2 li {
+    padding-left: 35px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+}
 .general-list-2 li:before {
   content: '';
   display: block;
@@ -720,6 +763,32 @@ footer {
   height: 42px;
   background: url("../img/icons/check.svg") no-repeat center left;
   background-size: cover;
+}
+@media screen and (max-width: 414px) {
+  .general-list-2 li:before {
+    top: -5px;
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mob-img-wrapper {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 header {
   overflow: hidden;
@@ -934,6 +1003,16 @@ header {
 #about {
   padding: 90px 0;
 }
+@media screen and (max-width: 991px) {
+  #about {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  #about {
+    padding: 40px 0;
+  }
+}
 .about-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,11 +1039,37 @@ header {
     width: 50%;
   }
 }
+@media screen and (max-width: 991px) {
+  .about-img-mob {
+    width: 535px;
+    margin: 0 auto 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block !important;
+  }
+}
 .about-item {
   margin-bottom: 45px;
 }
+@media screen and (max-width: 991px) {
+  .about-item:last-of-type {
+    margin-bottom: 0;
+  }
+}
 #plan {
   padding: 90px 0;
+}
+@media screen and (max-width: 991px) {
+  #plan {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  #plan {
+    padding: 40px 0;
+  }
 }
 .day {
   border-radius: 20px;
@@ -978,9 +1083,56 @@ header {
 .days {
   margin-bottom: 70px;
 }
+@media screen and (max-width: 991px) {
+  .days {
+    margin-bottom: 40px;
+  }
+}
 @media screen and (max-width: 1199px) {
   .day {
     padding: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .day {
+    display: block;
+    min-height: 1px;
+    padding: 0 0 35px 50px;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    position: relative;
+  }
+  .day:last-of-type {
+    padding-bottom: 0 !important;
+  }
+  .day:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 9px;
+    width: 3px;
+    background-color: #a41134;
+    height: 100%;
+  }
+  .day:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #a41134;
+    -webkit-box-shadow: 0 0 0 10px #fff;
+            box-shadow: 0 0 0 10px #fff;
+  }
+}
+@media screen and (max-width: 414px) {
+  .day {
+    padding: 0 0 30px 30px;
   }
 }
 .day-title {
@@ -997,6 +1149,14 @@ header {
     width: 35%;
   }
 }
+@media screen and (max-width: 991px) {
+  .day-title {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+}
 .day-title:before {
   content: '';
   display: block;
@@ -1007,6 +1167,11 @@ header {
   width: 3px;
   background-color: #a41134;
 }
+@media screen and (max-width: 991px) {
+  .day-title:before {
+    content: none;
+  }
+}
 .day-title h4 {
   color: #a41134;
   font-size: 28px;
@@ -1014,17 +1179,52 @@ header {
   line-height: 1.2;
   text-align: right;
 }
+@media screen and (max-width: 991px) {
+  .day-title h4 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 414px) {
+  .day-title h4 {
+    font-size: 16px;
+  }
+}
 .day-title h4 small {
   display: block;
   font-weight: normal;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 991px) {
+  .day-title h4 small {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .day-title h4 small {
+    font-size: 16px;
+  }
+}
 .day-info {
   vertical-align: middle;
   display: table-cell;
 }
+@media screen and (max-width: 991px) {
+  .day-info {
+    display: block;
+  }
+}
 .cert {
   padding: 190px 0 90px;
+}
+@media screen and (max-width: 991px) {
+  .cert {
+    padding: 90px 0 20px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .cert {
+    padding: 60px 0 20px;
+  }
 }
 .cert-text {
   width: 100%;
@@ -1038,9 +1238,14 @@ header {
 }
 @media screen and (max-width: 991px) {
   .cert-text {
-    padding: 20px 0 0;
+    padding: 40px 0 0;
     font-size: 24px;
     text-transform: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  .cert-text {
+    font-size: 16px;
   }
 }
 .cert-text span {
@@ -1059,6 +1264,11 @@ header {
     margin: 30px 0;
   }
 }
+@media screen and (max-width: 414px) {
+  .cert-text small {
+    font-size: 16px;
+  }
+}
 .cert-img {
   display: block;
   width: 100%;
@@ -1071,8 +1281,23 @@ header {
   padding: 100px 0 130px;
   color: #fff;
 }
+@media screen and (max-width: 991px) {
+  #for {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  #for {
+    padding: 40px 0;
+  }
+}
 .for-list {
   margin-bottom: 65px;
+}
+@media screen and (max-width: 991px) {
+  .for-list {
+    margin-bottom: 40px;
+  }
 }
 .for-list li {
   list-style: none;
@@ -1085,11 +1310,29 @@ header {
   background: url("../img/icons/check-white.svg") no-repeat left top;
   background-size: 50px 50px;
 }
+@media screen and (max-width: 414px) {
+  .for-list li {
+    background-size: 40px 40px;
+    padding-left: 60px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
 .for-list li:last-child {
   margin-bottom: 0;
 }
 #author {
   padding: 120px 0;
+}
+@media screen and (max-width: 991px) {
+  #author {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  #author {
+    padding: 40px 0;
+  }
 }
 .author-pre {
   text-align: center;
@@ -1101,9 +1344,24 @@ header {
   width: 100%;
   max-width: 1015px;
 }
+@media screen and (max-width: 414px) {
+  .author-pre {
+    font-size: 18px;
+    font-weight: normal;
+    color: #4f5f76;
+    line-height: 1.2;
+  }
+}
 .author-pre-img {
   display: block;
   margin: 35px auto 120px;
+}
+@media screen and (max-width: 414px) {
+  .author-pre-img {
+    margin: 20px auto 80px;
+    width: 28px;
+    height: 12px;
+  }
 }
 .general-title-author {
   position: relative;
@@ -1113,7 +1371,7 @@ header {
 @media screen and (max-width: 991px) {
   .general-title-author {
     margin-bottom: 20px;
-    padding-bottom: 28px;
+    padding-bottom: 0;
     text-align: center;
   }
   .general-title-author h3 {
@@ -1122,7 +1380,7 @@ header {
 }
 @media screen and (max-width: 991px) {
   .general-title-author span {
-    text-align: left;
+    text-align: center;
     left: -30px;
     top: 5px;
   }
@@ -1147,7 +1405,7 @@ header {
 }
 @media screen and (max-width: 991px) {
   .general-title-author:after {
-    bottom: 0;
+    content: none;
   }
 }
 .author-img {
@@ -1155,9 +1413,33 @@ header {
   width: 100%;
   max-width: 466px;
   position: relative;
+  margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .author-img-mob {
+    width: 100%;
+    max-width: 466px;
+    margin: 0 auto;
+    display: block !important;
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 414px) {
+  .author-img-mob {
+    height: 493px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 .author-info-best {
   margin: 59px 0 40px;
+}
+@media screen and (max-width: 991px) {
+  .author-info-best {
+    margin: 40px auto;
+    display: block;
+  }
 }
 .author-info-best h4 {
   margin-bottom: 30px;
@@ -1167,29 +1449,70 @@ header {
   color: #fff;
   padding: 30px 20px;
   background-color: #2c3e54;
-  display: inline-block;
   text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .author-info-best h4 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .author-info-best h4 {
+    font-size: 17px;
+    padding: 20px 15px;
+  }
+}
+.author-info-best h4 span {
+  display: block;
+}
+@media screen and (max-width: 414px) {
+  .author-info-best h4 span {
+    font-size: 18px;
+  }
 }
 .general-subtitle-author {
   margin: 100px 0 59px;
 }
+@media screen and (max-width: 991px) {
+  .general-subtitle-author {
+    margin: 20px 0;
+    padding-top: 20px;
+    text-align: center;
+    border-top: 3px solid #a41134;
+  }
+}
 #get {
   padding: 90px 0;
 }
+@media screen and (max-width: 991px) {
+  #get {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  #get {
+    padding: 40px 0;
+  }
+}
 .button-get {
   margin-top: 70px;
+}
+@media screen and (max-width: 991px) {
+  .button-get {
+    margin-top: 40px;
+  }
 }
 #revs {
   padding: 90px 0 180px;
 }
 @media screen and (max-width: 991px) {
   #revs {
-    padding: 60px 0;
+    padding: 60px 0 90px;
   }
 }
 @media screen and (max-width: 386px) {
   #revs {
-    padding: 40px 0;
+    padding: 40px 0 60px;
   }
 }
 .revs-slider-text {

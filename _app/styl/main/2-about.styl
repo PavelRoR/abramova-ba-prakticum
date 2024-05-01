@@ -1,5 +1,9 @@
 #about
 	padding 90px 0
+	@media screen and (max-width 991px)
+		padding 60px 0
+	@media screen and (max-width 414px)
+		padding 40px 0
 .about
 	&-info
 		display flex
@@ -13,5 +17,17 @@
 		margin-right 30px
 		@media screen and (max-width 1199px)
 			width 50%
+		&-mob
+			@media screen and (max-width 991px)
+				width 535px
+				margin 0 auto 20px
+				position relative
+				left 0
+				right 0
+				top 0
+				display block !important
 	&-item
 		margin-bottom: 45px
+		@media screen and (max-width 991px)
+			&:last-of-type
+				margin-bottom: 0
